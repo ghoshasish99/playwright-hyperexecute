@@ -1,0 +1,50 @@
+---
+version: 0.1
+globalTimeout: 150
+testSuiteTimeout: 150
+testSuiteStep: 150
+
+runson: win
+retryOnFailure: true
+
+maxRetries: 1
+concurrency: 2
+
+env:
+  # PAT: ${{ .secrets.testKey }}
+  TARGET_OS: MacOS Catalina
+
+# Dependency caching for Mac
+cacheKey: '{{ checksum "pom.xml" }}'
+cacheDirectories:
+  - .m2
+
+matrix:
+  classname: ["SampleTest1","SampleTest2"]
+#shell: bash
+
+pre:
+  # install playwright version to be used.
+  #- npm install playwright@1.23.0 --save-exact
+  # Download and install packages in the CACHE_DIR.
+  # Skip execution of the tests in the pre step
+  #- mvn -Dmaven.repo.local=./.m2 -Dmaven.test.skip=true clean install
+
+#post:
+#  - cat yaml/mac/junit_hyperexecute_matrix_sample.yaml
+
+runtime:
+  language: java
+  version: 11
+
+mergeArtifacts: true
+
+uploadArtefacts:
+  - name: Surefire-Report
+    path:
+      - target/surefire-reports/**
+
+testSuites:
+  - mvn clean install
+
+jobLabel: [playwright-Junit, mac, matrix]

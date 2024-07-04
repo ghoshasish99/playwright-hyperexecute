@@ -1,0 +1,127 @@
+alwaysRunPostSteps: false
+appium: false
+betaFeature:
+    setPartiallyCompletedAsCompleted: false
+cacheDirectories:
+    - .m2
+cacheKey: '{{ checksum "pom.xml" }}'
+captureScreenRecordingForScenarios: false
+codeDirectory: playwright-hyperexecute
+collectLocalGitData: true
+combineTasksInMatrixMode: false
+concurrency: 2
+cypress: false
+differentialUpload:
+    enabled: false
+    forcedDisabled: false
+    ttlHours: null
+dynamicAllocation: false
+env:
+    TARGET_OS: MacOS Catalina
+errorCategorizedOnFailureOnly: false
+framework:
+    additional_args: null
+    args:
+        appId: ""
+        appPath: ""
+        avoidAppLaunch: false
+        deviceSelectionStrategy: ""
+        devices: []
+        disableReleaseDevice: false
+        filters:
+            attributes: []
+        fixedIP: ""
+        isRealMobile: false
+        isVirtualDevice: false
+        language: ""
+        locale: ""
+        minorOsVersion: false
+        mobileDC: null
+        platformName: ""
+        playwrightRD: false
+        preservedDevice: false
+        queueTimeout: 0
+        resignApp: true
+        shards:
+            mappings: []
+        skipInstall: false
+        skipUninstallPreviousBuild: false
+        skipXMLOnRun: false
+        testSuiteAppId: ""
+        testSuitePath: ""
+        uninstallPreviousBuild: false
+        xcTestPlanId: ""
+        xcTestPlanPath: ""
+    baseCommand: ""
+    defaultReports: false
+    discoveryFlags: []
+    discoveryType: ""
+    downloadURL: ""
+    flags: []
+    isTestNGXMLSuite: false
+    licenseKey: ""
+    name: ""
+    runnerFlags: []
+    toscaArgs: null
+    userdefinediscovery: false
+    version: ""
+    workingDirectory: ""
+globalTimeout: 150
+jobID: 6b6bf1a7-b676-420e-a06a-33efdd54cfa8
+jobLabel:
+    - playwright-Junit
+    - mac
+    - matrix
+key: AixUviKbDhFun9y5ieFcUrA8aUd0NHNICnKMZeDa39N1qhruMk
+localHTTPProxy: ""
+matrix:
+    classname:
+        - SampleTest1
+        - SampleTest2
+maxRetries: 1
+maxRetriesPreSteps: 0
+mergeArtifacts: true
+meta: {}
+platformConfig: null
+postDirectives:
+    commands: []
+    shell: ""
+    workingDirectory: ""
+preDirectives:
+    commands: []
+    maxRetries: 0
+    shell: ""
+    workingDirectory: ""
+project:
+    id: ""
+    name: ""
+    type: default
+retryOnFailure: true
+runson: win
+runtime:
+    language: java
+    version: "11"
+    addons: []
+    opts: {}
+sourcePayload:
+    verifySSL: true
+storageType: ""
+testDiscoveryResultV3: []
+testSuiteStep: 150
+testSuiteTimeout: 150
+testSuites:
+    - mvn clean install
+testType: playwright
+triggerMode: false
+tunnelOpts:
+    testsPerTunnel: 10
+uploadArtefacts:
+    - email:
+        linkValidity: 0
+        metaInfo: []
+        to: []
+      name: Surefire-Report
+      path:
+        - target/surefire-reports/**
+user: ghoshasish99
+version: "0.1"

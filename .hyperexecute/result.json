@@ -1,0 +1,139 @@
+{
+    "id": "e2f15fe5-fa85-4ef1-bbc2-dc73ed2b5781",
+    "created_at": "2024-07-04T11:13:44Z",
+    "update_at": "2024-07-04T11:20:07Z",
+    "global_timeout": 150,
+    "tunnel_name": "",
+    "start_time": "2024-07-04T11:13:55Z",
+    "end_time": "2024-07-04T11:20:07Z",
+    "summary": {
+        "total_time": 372000000000,
+        "execution_time": 372000000000,
+        "total_tasks": 2,
+        "build_time_consumed": 741000000000,
+        "jobTestExecutionTime": "6s",
+        "failed_tasks": 2,
+        "total_stage_info": {
+            "prerun": {
+                "StageFailedPercent": 0,
+                "StagePassPercent": 100,
+                "TotalStage": 2
+            },
+            "scenario": {
+                "StageFailedPercent": 100,
+                "StagePassPercent": 0,
+                "TotalStage": 2
+            }
+        },
+        "status": "failed",
+        "job_link": "https://hyperexecute.lambdatest.com/hyperexecute/task?jobId=e2f15fe5-fa85-4ef1-bbc2-dc73ed2b5781"
+    },
+    "tasks": [
+        {
+            "id": "541027ad-044b-47d7-a7d1-24515cf168c3",
+            "os": "win",
+            "status": "failed",
+            "remark": "error in running test suites - step 1 - exit status 1",
+            "debug": false,
+            "created_at": "2024-07-04T11:13:53Z",
+            "update_at": "2024-07-04T11:20:07Z",
+            "start_time": "2024-07-04T11:13:56Z",
+            "end_time": "2024-07-04T11:20:07Z",
+            "group_number": 1,
+            "stages": [
+                {
+                    "id": "97fcbafb-f0cf-41c2-94d8-4ce6b4d8f583",
+                    "type": "prerun",
+                    "status": "completed",
+                    "name": "pre",
+                    "iteration": 0,
+                    "link": "pre.log",
+                    "created_at": "2024-07-04T11:14:22Z",
+                    "started_at": "2024-07-04T11:14:22Z",
+                    "updated_at": "2024-07-04T11:14:45.809492954Z",
+                    "order": 3,
+                    "task_number": 1
+                },
+                {
+                    "id": "a6972077-bcc1-478e-b8a8-2be15a13cd07",
+                    "type": "scenario",
+                    "status": "failed",
+                    "name": "mvn clean install",
+                    "iteration": 0,
+                    "link": "command.1.0.log",
+                    "created_at": "2024-07-04T11:14:45Z",
+                    "started_at": "2024-07-04T11:14:54Z",
+                    "updated_at": "2024-07-04T11:19:38.149791578Z",
+                    "order": 4,
+                    "task_number": 1
+                },
+                {
+                    "id": "8791fdda-0fc2-4585-85c2-1551c2c374f6",
+                    "type": "scenario",
+                    "status": "failed",
+                    "name": "mvn clean install",
+                    "iteration": 1,
+                    "link": "command.1.1.log",
+                    "created_at": "2024-07-04T11:19:39Z",
+                    "started_at": "2024-07-04T11:19:39Z",
+                    "updated_at": "2024-07-04T11:20:02.545836284Z",
+                    "order": 4,
+                    "task_number": 1
+                }
+            ]
+        },
+        {
+            "id": "c53b5c8e-8db1-47f3-9c3a-6506fd7c70af",
+            "os": "win",
+            "status": "failed",
+            "remark": "error in running test suites - step 1 - exit status 1",
+            "debug": false,
+            "created_at": "2024-07-04T11:13:53Z",
+            "update_at": "2024-07-04T11:20:05Z",
+            "start_time": "2024-07-04T11:13:55Z",
+            "end_time": "2024-07-04T11:20:05Z",
+            "group_number": 2,
+            "stages": [
+                {
+                    "id": "f8276430-9709-45f3-a52b-efb14d4ebc83",
+                    "type": "prerun",
+                    "status": "completed",
+                    "name": "pre",
+                    "iteration": 0,
+                    "link": "pre.log",
+                    "created_at": "2024-07-04T11:14:15Z",
+                    "started_at": "2024-07-04T11:14:15Z",
+                    "updated_at": "2024-07-04T11:14:36.325715853Z",
+                    "order": 3,
+                    "task_number": 2
+                },
+                {
+                    "id": "97373b04-c9c1-4afc-8d9f-07259ef20d13",
+                    "type": "scenario",
+                    "status": "failed",
+                    "name": "mvn clean install",
+                    "iteration": 0,
+                    "link": "command.1.0.log",
+                    "created_at": "2024-07-04T11:14:36Z",
+                    "started_at": "2024-07-04T11:14:46Z",
+                    "updated_at": "2024-07-04T11:19:37.31142471Z",
+                    "order": 4,
+                    "task_number": 2
+                },
+                {
+                    "id": "e1148c10-9782-47a6-b97d-eec579839b85",
+                    "type": "scenario",
+                    "status": "failed",
+                    "name": "mvn clean install",
+                    "iteration": 1,
+                    "link": "command.1.1.log",
+                    "created_at": "2024-07-04T11:19:38Z",
+                    "started_at": "2024-07-04T11:19:38Z",
+                    "updated_at": "2024-07-04T11:20:00.644512004Z",
+                    "order": 4,
+                    "task_number": 2
+                }
+            ]
+        }
+    ]
+}
